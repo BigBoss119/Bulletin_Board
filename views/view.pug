@@ -1,0 +1,60 @@
+html
+	head
+		script(src="https://code.jquery.com/jquery-3.2.1.min.js")
+		script.
+			
+	title Welcome
+	style
+		include custom.css
+
+	style(type='text/css').
+		.title {
+			border-top: 1px solid black;
+			border-bottom: 1px solid black;
+			margin-top: -16px !important;
+			}
+
+		.content {
+			position: relative;
+			border-left: 1px solid black;
+			border-right: 1px solid black;
+			border-bottom: 1px solid black;
+			}
+
+		.body {
+			padding: 25px 0px 60px 20px;
+			text-align: left;
+			}
+
+		#messages {
+			position: relative;
+			}
+
+		ul {
+			//- margin-top: -16px !important;
+		}
+
+		p {
+			padding: 0px 0px 50px 20px !important; 
+		}
+
+
+
+	body
+		include nav.pug
+
+
+
+	div(class='block' style='margin-top: 50px;') 
+			
+		h1 Bulletin Board
+		br
+		p All messages
+		div#messages
+			ul.content
+				each message in messages
+					ul.title=message.title
+					ul.body(style'')=message.body
+					br
+		br
+		a.button(href='/') BACK

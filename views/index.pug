@@ -1,0 +1,37 @@
+html
+	head
+		script(src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js")
+		script
+			
+	title Welcome
+	style
+		include custom.css
+	style(type='text/css').
+		#inputField{
+		height:200px;
+		display: block;
+		width: 100%;
+		}
+
+		.formField{
+		min-width: 300px;
+		}
+
+		.block{
+		min-width: 400px;
+		}
+
+
+	body
+		include nav.pug
+
+
+
+	div(class='block' style='margin-top: 50px;') 
+			
+		form(method='POST' action='/dropMessage' class='formField')
+			p Title:
+			input(type='text' id='titleField' name='title')
+			p Message:
+			textarea(type='text' id='inputField' name='message') Please enter your message here
+			input(type='submit' value='Submit' style='margin:15px 0px 25px 0px;')

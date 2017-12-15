@@ -1,0 +1,50 @@
+body{
+	/*background-image: url("test.jpg");*/
+	background-color: gold;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+
+nav{
+	border-bottom: 1px solid white;
+	border-top: 1px solid white;
+}
+
+
+ul{
+	display: inline-block;
+	margin: 0 auto;
+	width: 100%;
+	text-align: center;
+	padding: 15px 0px 15px 0px;
+}
+
+h1{
+	text-align: center;
+	padding-top: 3%;
+}
+
+a{
+	padding-right: 50px;
+}
+
+.block{
+	display: block;
+	margin: 0 auto;
+	width: 40%;
+	background: rgba(255, 255, 255, 0.6);
+}
+
+.formField{
+	display: block;
+	margin: 0 auto;
+	width: 75%;
+	justify-content: center;
+}
+
+p{
+	display: block;
+	margin: 0 auto;
+	width: 100%;
+	padding: 20px;
+}

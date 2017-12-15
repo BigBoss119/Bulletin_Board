@@ -1,0 +1,27 @@
+{
+  "name": "bulletinboard",
+  "version": "1.0.0",
+  "description": "Bulletin Board Application Create a website that allows people to post messages to a page. A message consists of a title and a body. The site should have two pages: - The first page shows people a form where they can add a new message. - The second page shows each of the messages people have posted. Make sure there's a way to navigate the site so users can access each page.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BigBoss119/Bulletin_Board.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BigBoss119/Bulletin_Board/issues"
+  },
+  "homepage": "https://github.com/BigBoss119/Bulletin_Board#readme",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "dotenv": "^4.0.0",
+    "express": "^4.16.2",
+    "pg": "^7.4.0",
+    "pug": "^2.0.0-rc.4",
+    "sql-template-strings": "^2.2.2"
+  }
+}
